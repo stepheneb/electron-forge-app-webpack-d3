@@ -29,3 +29,12 @@
 import './index.css';
 
 console.log('👋 This message is being logged by "renderer.js", included via webpack');
+
+import * as d3 from "d3";
+
+ipcRenderer.on('backgroundColor', (event, message) => {
+    console.log(message);
+    d3.select("body").transition()
+    .duration(2000)
+    .style("background-color", message);
+})
