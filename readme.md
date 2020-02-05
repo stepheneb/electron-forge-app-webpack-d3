@@ -31,7 +31,7 @@ Running the Windows executable:
 
 Running the MacOS app:
 ```
-$ . out\electron-forge-app-webpack-d3-darwin-x64\electron-forge-app-webpack-d3.app
+$ open out/electron-forge-app-webpack-d3-darwin-x64/electron-forge-app-webpack-d3.app
 ```
 
 
