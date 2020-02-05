@@ -1,6 +1,6 @@
 {
   "name": "electron-forge-app-webpack-d3",
-  "productName": "electron-forge-app-webpack-d3",
+  "productName": "electron-forge-d3",
   "version": "1.0.0",
   "description": "Electron application using electron-forge, webpack and d3.js",
   "main": ".webpack/main",
@@ -20,6 +20,18 @@
   "config": {
     "forge": {
       "packagerConfig": {},
+      "publishers": [
+        {
+          "name": "@electron-forge/publisher-github",
+          "config": {
+            "repository": {
+              "owner": "stepheneb",
+              "name": "electron-forge-app-webpack-d3"
+            },
+            "prerelease": true
+          }
+        }
+      ],
       "makers": [
         {
           "name": "@electron-forge/maker-squirrel",
@@ -32,6 +44,13 @@
           "platforms": [
             "darwin"
           ]
+        },
+        {
+          "name": "@electron-forge/maker-dmg",
+          "config": {
+            "background": "images/cabbage-bw-transparent.png",
+            "format": "ULFO"
+          }
         },
         {
           "name": "@electron-forge/maker-deb",
@@ -68,6 +87,7 @@
   "devDependencies": {
     "@electron-forge/cli": "^6.0.0-beta.47",
     "@electron-forge/maker-deb": "^6.0.0-beta.47",
+    "@electron-forge/maker-dmg": "^6.0.0-beta.48",
     "@electron-forge/maker-rpm": "^6.0.0-beta.47",
     "@electron-forge/maker-squirrel": "^6.0.0-beta.47",
     "@electron-forge/maker-zip": "^6.0.0-beta.47",
