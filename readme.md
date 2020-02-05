@@ -23,16 +23,15 @@ npm run make
 ```
 This generates a platform-specific executable in the `out` directory.
 
-Running the Windows executable:
+Run the Windows executable:
 ```
-> .\out\electron-forge-app-webpack-d3-win32-x64\electron-forge-app-webpack-d3.exe
-```
-
-Running the MacOS app:
-```
-$ open out/electron-forge-app-webpack-d3-darwin-x64/electron-forge-app-webpack-d3.app
+> .\out\electron-forge-d3-win32-x64\electron-forge-d3.exe
 ```
 
+Run the MacOS app:
+```
+$ open out/electron-forge-d3-darwin-x64/electron-forge-d3.app
+```
 
 Initial creation:
 ```
