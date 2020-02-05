@@ -1,7 +1,7 @@
 {
   "name": "electron-forge-app-webpack-d3",
   "productName": "electron-forge-d3",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Electron application using electron-forge, webpack and d3.js",
   "main": ".webpack/main",
   "scripts": {
