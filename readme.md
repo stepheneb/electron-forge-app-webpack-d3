@@ -7,7 +7,6 @@ npm: 6.13.4
 Install more development dependencies:
 ```
 npm install -g yarn
-npm install -g @electron-forge/cli
 ```
 
 To run:
@@ -20,7 +19,7 @@ npm start
 
 Build application using cli:
 ```
-electron-forge make
+npm run make
 ```
 This generates a platform-specific executable in the `out` directory.
 

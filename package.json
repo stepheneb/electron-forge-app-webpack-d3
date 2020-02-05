@@ -28,6 +28,7 @@
               "owner": "stepheneb",
               "name": "electron-forge-app-webpack-d3"
             },
+            "draft": true,
             "prerelease": true
           }
         }
